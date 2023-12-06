@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    'jest/globals': true
   },
   extends: [
     'standard',
@@ -14,7 +15,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'jest'
   ],
   root: true,
   rules: {
@@ -25,7 +27,10 @@ module.exports = {
         argsIgnorePattern: '^_'
       }
     ],
+    '@typescript-eslint/no-var-requires': 'off',
     'no-async-promise-executor': 'off',
-    'no-sequences': 'off'
+    'no-return-assign': 'off',
+    'no-sequences': 'off',
+    'no-unused-expressions': 'off'
   }
 }

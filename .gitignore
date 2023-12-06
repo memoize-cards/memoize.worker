@@ -259,6 +259,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Kuba.io build / generate output
-assets/prelude
-release
+# swc
+release/

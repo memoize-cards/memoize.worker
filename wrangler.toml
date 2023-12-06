@@ -1,6 +1,6 @@
-compatibility_date = "2023-05-27"
+compatibility_date = "2023-12-06"
 main = "release/index.js"
-name = "kuba-io"
+name = "memoize-worker"
 send_metrics = false
 
 [build]
