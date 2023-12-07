@@ -1,13 +1,11 @@
 import { paint } from '@standard/h'
+import component from './component'
 import magic from '@standard/magic'
-import view from './view'
 
-@paint(view)
+@paint(component)
 class Description {
-  #content = 'kuba'
-
   get content () {
-    return Description[magic.content] ?? 'Join the Kuba revolution and experience the next generation of web development. Unlock the full potential of speed, reliability, and simplicity, and let your creativity soar.'
+    return (Description[magic.content] ?? '')
   }
 
   static change (newContent) {

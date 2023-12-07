@@ -38,9 +38,9 @@
   "packageManager": "yarn@4.0.2",
   "private": true,
   "scripts": {
-    "build": "swc src -d release",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
     "postinstall": "husky install",
-    "start": "wrangler dev",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"

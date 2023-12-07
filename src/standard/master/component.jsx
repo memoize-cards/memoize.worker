@@ -4,13 +4,6 @@ import h from '@standard/h'
 import Scripts from '@standard/scripts'
 import Title from '@standard/title'
 
-/**
- * Represents the master template for the Kuba website.
- *
- * @param {Object} _props - The component props (unused).
- * @param {Array} children - The child components to be rendered inside the body of the template.
- * @returns {JSX.Element} - The JSX element representing the master template.
- */
 function component (_props, children) {
   return (
     <html lang='en-US'>

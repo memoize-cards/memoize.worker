@@ -1,17 +1,15 @@
 import { paint } from '@standard/h'
+import component from './component'
 import magic from '@standard/magic'
-import view from './view'
 
-@paint(view)
+@paint(component)
 class Title {
-  #content = 'kuba'
-
   get content () {
-    return Title[magic.content] ?? 'Kuba'
+    return (Title[magic.content] ?? 'Memoize')
   }
 
-  static change (newContent) {
-    Title[magic.content] = newContent
+  static change (content) {
+    Title[magic.content] = content
     return Title
   }
 }

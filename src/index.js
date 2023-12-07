@@ -1,7 +1,6 @@
-import '@pixel/reset'
-import '@pixel/tokens'
-import '@api/clickMe'
-import '@pages/home'
+import '@pixel'
+import '@api'
+import '@pages'
 
 import asset from '@standard/asset'
 import router from '@standard/router'

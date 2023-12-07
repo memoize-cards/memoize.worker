@@ -260,4 +260,4 @@ dist
 .pnp.*
 
 # swc
-release/
+.release/

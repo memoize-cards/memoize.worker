@@ -7,11 +7,11 @@
       "tsx": true,
     },
     "paths": {
-      "@api/*": ["api/*"],
-      "@elements/*": ["elements/*"],
-      "@pages/*": ["pages/*"],
-      "@pixel/*": ["pixel/*"],
-      "@standard/*": ["standard/*"]
+      "@api*": ["api/*"],
+      "@elements*": ["elements/*"],
+      "@pages*": ["pages/*"],
+      "@pixel*": ["pixel/*"],
+      "@standard*": ["standard/*"]
     },
     "target": "es2022",
     "transform": {
