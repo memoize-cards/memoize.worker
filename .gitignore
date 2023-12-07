@@ -262,5 +262,5 @@ dist
 # Wrangler
 .wrangler/
 
-# swc
+# SWC
 .release/
