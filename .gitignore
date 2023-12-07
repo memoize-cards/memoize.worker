@@ -259,5 +259,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Wrangler
+.wrangler/
+
 # swc
 .release/
