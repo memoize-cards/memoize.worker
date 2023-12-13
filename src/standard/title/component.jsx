@@ -1,9 +1,9 @@
 import h from '@standard/h'
 
-function view (title) {
+function component (title) {
   return (
     <title>{title.content}</title>
   )
 }
 
-export default view
+export default component
