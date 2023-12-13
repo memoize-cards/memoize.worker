@@ -6,7 +6,7 @@ import styled from '@standard/styled'
 import weight from './weight'
 
 const text = new Proxy({}, {
-  get (_target, key) {
+  get (_, key) {
     return styled[key]`
       color: ${color};
       font-family: ${family};
