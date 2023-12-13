@@ -1,1 +1,1 @@
-export { default } from './scripts'
+export { default } from './component'
