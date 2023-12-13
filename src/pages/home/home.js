@@ -1,9 +1,9 @@
 import { paint } from '@standard/h'
 import result from '@standard/result'
 import storage from './storage'
-import view from './view'
+import component from './component'
 
-@paint(view)
+@paint(component)
 @storage
 class Home {
   #data

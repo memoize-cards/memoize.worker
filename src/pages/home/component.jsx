@@ -1,4 +1,3 @@
-import Button from '@elements/button'
 import h from '@standard/h'
 import Master from '@standard/master'
 import text from '@elements/text'
@@ -9,7 +8,7 @@ function component (address) {
       <address>
         <text.P>{address.value}</text.P>
       </address>
-      <Button data-action='/api/click-me' data-for='#shelf' data-morph='afterbegin'>Click Me</Button>
+      <button data-action='/api/click-me' data-for='#shelf' data-morph='afterbegin'>Click Me</button>
       <div id='shelf' />
     </Master>
   )
