@@ -10,7 +10,7 @@ async function handle (request, env, ctx) {
   extractArgs(request)
   extractParams(request, path)
 
-  return page?.(request, env, ctx)
+  return page(request, env, ctx)
 }
 
 export default handle
