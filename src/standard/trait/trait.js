@@ -1,5 +1,5 @@
-const magic = new Proxy({}, {
+const trait = new Proxy({}, {
   get: (target, prop) => (target[prop] ??= Symbol(prop))
 })
 
-export default magic
+export default trait

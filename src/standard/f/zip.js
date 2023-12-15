@@ -1,10 +1,15 @@
 import arity from './arity'
 import curry from './curry'
-import resolveDunders from './resolveDunders'
+import resolveTrait from './internal/resolveTrait'
+import trait from '@standard/trait'
 
 function zip (x, y) {
   const n = Math.max(x.length, y.length)
   return Array(n).fill(undefined).map((_, i) => [x[i], y[i]])
 }
 
-export default curry(arity(2, resolveDunders(zip)))
+Object.assign(zip, {
+  __: trait.zip
+})
+
+export default curry(arity(2, resolveTrait(zip)))

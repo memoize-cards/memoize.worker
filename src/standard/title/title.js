@@ -1,15 +1,15 @@
 import { paint } from '@standard/h'
 import component from './component'
-import magic from '@standard/magic'
+import trait from '@standard/trait'
 
 @paint(component)
 class Title {
   get content () {
-    return (Title[magic.content] ?? 'Memoize')
+    return (Title[trait.content] ?? 'Memoize')
   }
 
   static change (content) {
-    Title[magic.content] = content
+    Title[trait.content] = content
     return Title
   }
 }
